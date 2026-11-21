@@ -1,0 +1,7 @@
+{
+  "cases": [
+    "example-medicine-cardiology-day1.json",
+    "medicine-cardiology-ami-day1.json",
+    "medicine-cardiology-tachycardia-day1.json"
+  ]
+}

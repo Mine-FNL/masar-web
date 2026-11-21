@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "id": "example-medicine-cardiology-day1",
+  "track": {
+    "id": "medicine",
+    "name": {
+      "ar": "الطب",
+      "en": "Medicine"
+    }
+  },
+  "specialty": {
+    "id": "cardiology",
+    "name": {
+      "ar": "قلب",
+      "en": "Cardiology"
+    }
+  },
+  "level": "level1",
+  "dok": 2,
+  "title": {
+    "ar": "[مثال] يوم في حياة طبيب قلب",
+    "en": "[EXAMPLE] A Day in a Cardiologist's Life"
+  },
+  "summary": {
+    "ar": "ملف مثال يوضّح شكل المحتوى فقط. جميع السطور الطبية هنا للتوضيح البنيوي ويجب استبدالها بالمحتوى المعتمد. التقييم ستة أسئلة متدرّجة من DOK 1 إلى DOK 4، ونتيجته تُصنّف في ثلاث درجات.",
+    "en": "A structural example showing the shape of the content only. Every clinical line here is illustrative and must be replaced with approved teaching content. The assessment is six graded questions from DOK 1 to DOK 4, and its result falls into one of three bands."
+  },
+  "estimatedMinutes": 12,
+  "background": {
+    "file": "background-day.jpg",
+    "caption": {
+      "ar": "قسم القلب في الصباح",
+      "en": "The cardiology department in the morning"
+    },
+    "credit": "Pexels 4421501 — Pexels License (free to use)",
+    "altText": {
+      "ar": "غرفة في قسم القلب بأجهزتها الطبية",
+      "en": "A room in the cardiology department with its medical equipment"
+    }
+  },
+  "cover": {
+    "file": "cardiology-cover.jpg",
+    "caption": {
+      "ar": "المريض وأقطاب التخطيط موصولة بها",
+      "en": "The patient with the ECG leads attached"
+    },
+    "credit": "Pexels 7108359 — Pexels License (free to use)",
+    "altText": {
+      "ar": "مريض مستلقية وأقطاب تخطيط القلب موصولة بها",
+      "en": "A patient lying down with ECG leads attached"
+    }
+  },
+  "scenario": [
+    {
+      "id": "step-1",
+      "kind": "narrative",
+      "dok": 2,
+      "text": {
+        "ar": "الساعة السابعة صباحاً في قسم القلب. يدخل مريض في الثامنة والخمسين يشتكي من ألم ضاغط في صدره بدأ قبل ساعة، ويمتد إلى ذراعه اليسرى، مع تعرّق وضيق نفس. الضغط ١٤٥/٩٠ والنبض ٩٨.",
+        "en": "Seven in the morning in the cardiology department. A 58-year-old man walks in complaining of a pressing chest pain that began an hour ago and spreads to his left arm, with sweating and breathlessness. Blood pressure 145/90, pulse 98."
+      },
+      "image": {
+        "file": "cardiology-cover.jpg",
+        "caption": {
+          "ar": "المريض يصل إلى الاستقبال",
+          "en": "The patient arrives at reception"
+        },
+        "credit": "Pexels 7108359 — Pexels License (free to use)",
+        "altText": {
+          "ar": "مريض مستلقٍ وأقطاب التخطيط موصولة بصدره",
+          "en": "A patient lying down with ECG leads on the chest"
+        }
+      },
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "kind": "decision",
+      "dok": 3,
+      "text": {
+        "ar": "أمامك عدة خيارات. ما أول إجراء تقوم به؟",
+        "en": "You have several options. What is the first thing you do?"
+      },
+      "image": {
+        "file": "cardiology-leads.jpg",
+        "caption": {
+          "ar": "أقطاب القلب وورقة التخطيط على الطاولة",
+          "en": "The ECG leads and the tracing on the table"
+        },
+        "credit": "Pexels 35044386 — Pexels License (free to use)",
+        "altText": {
+          "ar": "سماعة طبية وأقطاب قلب وورقة تخطيط",
+          "en": "A stethoscope, ECG leads and a tracing on paper"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "أطلب تخطيط القلب فوراً",
+            "en": "Order an ECG immediately"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "أحسنت. عند ألم الصدر الحاد يكون التخطيط الكهربائي أسرع وسيلة لتحديد ما إذا كانت هناك تغيّرات تحتاج تدخلاً عاجلاً.",
+            "en": "Well done. In acute chest pain, the ECG is the fastest way to see whether there are changes needing urgent action."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "أنتظر نتائج التحاليل المخبرية",
+            "en": "Wait for the laboratory results"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الانتظار يؤخّر القرار. التحاليل مفيدة لكنها ليست أول خطوة في تقييم ألم الصدر الحاد.",
+            "en": "Waiting delays the decision. Laboratory tests are useful, but they are not the first step in assessing acute chest pain."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "أصرف مسكّناً وأطلب منها العودة غداً",
+            "en": "Give a painkiller and ask her to come back tomorrow"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "هذا الخيار يترك حالة قد تكون عاجلة دون تقييم، وهو الأكثر خطورة بين الخيارات.",
+            "en": "This leaves a potentially urgent situation unassessed, and is the most dangerous option here."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "kind": "reveal",
+      "dok": 2,
+      "text": {
+        "ar": "يظهر التخطيط تغيّرات لا يمكن تجاهلها. القرار الآن لم يعد للطالب وحده: يجب إبلاغ الطبيب المسؤول فوراً.",
+        "en": "The ECG shows changes that cannot be ignored. The decision is no longer the student's alone: the responsible doctor must be told at once."
+      },
+      "image": {
+        "file": "cardiology-ecg.jpg",
+        "caption": {
+          "ar": "شاشة التخطيط أثناء الفحص",
+          "en": "The ECG monitor during the examination"
+        },
+        "credit": "Pexels 8460227 — Pexels License (free to use)",
+        "altText": {
+          "ar": "شاشة مراقبة القلب أثناء الفحص",
+          "en": "A cardiac monitor screen during the examination"
+        }
+      },
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "kind": "decision",
+      "dok": 3,
+      "text": {
+        "ar": "ما الخطوة التالية الصحيحة؟",
+        "en": "What is the correct next step?"
+      },
+      "image": {
+        "file": "cardiology-review.jpg",
+        "caption": {
+          "ar": "مراجعة نتيجة التخطيط مع المريض",
+          "en": "Reviewing the ECG result with the patient"
+        },
+        "credit": "Pexels 8460126 — Pexels License (free to use)",
+        "altText": {
+          "ar": "طبيب يراجع نتيجة التخطيط مع مريض",
+          "en": "A doctor reviewing an ECG result with a patient"
+        }
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "أُبلغ الطبيب المسؤول فوراً وأتابع معه",
+            "en": "Tell the responsible doctor immediately and follow up with them"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح. معرفة حدود دورك ومتى تُسلّم القرار جزء من المهارة الطبية، وليس نقصاً فيها.",
+            "en": "Correct. Knowing the limits of your role and when to hand the decision over is part of medical skill, not a gap in it."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "أكمل التقييم وحدي ثم أُبلغ لاحقاً",
+            "en": "Continue the assessment alone and report later"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "التأخير في الإبلاغ هو الخطأ الشائع في هذا الموقف، وليس إكمال التقييم.",
+            "en": "Delaying the report is the common error in this situation, not completing the assessment."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    }
+  ],
+  "assessment": [
+    {
+      "id": "q1",
+      "dok": 1,
+      "prompt": {
+        "ar": "في هذه الحالة، ما الوسيلة التي طُلبت أولاً لتقييم ألم الصدر؟",
+        "en": "In this case, which test was ordered first to assess the chest pain?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "تخطيط القلب",
+            "en": "ECG"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح، وهو ما فعلته في الحالة.",
+            "en": "Correct — that is what you did in the case."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "التحاليل المخبرية",
+            "en": "Laboratory tests"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "لم تُطلب أولاً.",
+            "en": "Not ordered first."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "الأشعة المقطعية",
+            "en": "CT scan"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "تُطلب لاحقاً حسب الحالة.",
+            "en": "Ordered later, depending on the case."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "هذا سؤال تذكّر: يعيد على ما جرى في الحالة مباشرة، ويعطي الطالب نقطة بداية عادلة قبل الأسئلة الأصعب.",
+        "en": "This is a recall question: it restates what happened in the case and gives the student a fair starting point before the harder items."
+      },
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "dok": 2,
+      "prompt": {
+        "ar": "لماذا يكون التخطيط الكهربائي أول إجراء عند ألم الصدر الحاد؟",
+        "en": "Why is the ECG the first action in acute chest pain?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "لأنه سريع وغير باضع ويكشف ما يحتاج تدخلاً عاجلاً",
+            "en": "It is fast, non-invasive, and reveals what needs urgent action"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح.",
+            "en": "Correct."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "لأنه يغني عن فحص المريض",
+            "en": "It replaces examining the patient"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "لا يغني عن الفحص؛ الفحص يبقى أساسياً.",
+            "en": "It does not replace the examination, which remains essential."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "لأنه يحدّد العلاج النهائي",
+            "en": "It determines the final treatment"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "يحدّد الحاجة للتدخل، ولا يحدّد العلاج النهائي وحده.",
+            "en": "It shows whether intervention is needed; it does not decide the final treatment by itself."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "سؤال مفهوم: يختبر سبب الخطوة، لا حفظها.",
+        "en": "A concept question: it tests the reason for the step, not memorising it."
+      },
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "dok": 2,
+      "prompt": {
+        "ar": "أي من التالي ليس خطوة أولى مناسبة في هذا الموقف؟",
+        "en": "Which of the following is NOT an appropriate first step in this situation?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "تخطيط القلب",
+            "en": "ECG"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "هذا هو الخيار الصحيح كخطوة أولى.",
+            "en": "That IS the correct first step."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "صرف مسكّن وإعادة المريض غداً",
+            "en": "A painkiller and sending the patient home until tomorrow"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح، هذا غير مناسب إطلاقاً.",
+            "en": "Correct, that is entirely inappropriate."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "إبلاغ الطبيب المسؤول",
+            "en": "Reporting to the responsible doctor"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "هذا إجراء صحيح.",
+            "en": "That is a correct action."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "الخطوة غير المناسبة هي ترك حالة قد تكون عاجلة دون تقييم.",
+        "en": "The inappropriate step is leaving a potentially urgent situation unassessed."
+      },
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "dok": 3,
+      "prompt": {
+        "ar": "لماذا يُعدّ إبلاغ الطبيب المسؤول جزءاً من المهارة وليس ضعفاً فيها؟",
+        "en": "Why is reporting to the responsible doctor part of the skill rather than a weakness in it?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "لأن سلامة المريض تعتمد على تسليم القرار في الوقت المناسب",
+            "en": "Because patient safety depends on handing the decision over at the right time"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "بالضبط.",
+            "en": "Exactly."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "لأن الطالب لا يستطيع القراءة في التخطيط",
+            "en": "Because a student cannot read the ECG"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "القدرة على القراءة ليست سبب الإبلاغ؛ الحدود المهنية هي السبب.",
+            "en": "Ability is not the reason to report; professional limits are."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "لأن الإبلاغ يُنهي مسؤولية الطالب",
+            "en": "Because reporting ends the student's responsibility"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الإبلاغ ينقل القرار ولا يُنهي المتابعة.",
+            "en": "Reporting transfers the decision; it does not end the follow-up."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "سؤال استدلال: يختبر فهم حدود الدور، وهو مبدأ مهني لا معلومة تُحفظ.",
+        "en": "A reasoning question: it tests understanding of the limits of the role, a professional principle rather than a fact to memorise."
+      },
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "dok": 3,
+      "prompt": {
+        "ar": "تصل مريض أخرى بألم صدر مشابه، لكن تخطيطها سليم. ما الأنسب؟",
+        "en": "Another patient arrives with similar chest pain, but her ECG is normal. What is most appropriate?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "أكمل التقييم وأطلب ما يلزم، ولا أستبعد الحالة لسلامة التخطيط",
+            "en": "Continue the assessment and order what is needed; a normal ECG does not rule the case out"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح: التخطيط السليم يقلّل الاحتمال ولا ينهي التقييم.",
+            "en": "Correct: a normal ECG lowers the probability; it does not end the assessment."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "أطمئنها وأصرفها لأن التخطيط سليم",
+            "en": "Reassure her and send her home because the ECG is normal"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "هذا تكرار لنفس الخطأ في سياق آخر.",
+            "en": "This repeats the same error in a different setting."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "أعيد التخطيط فقط وأتوقف عند ذلك",
+            "en": "Repeat the ECG only and stop there"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "إعادة التخطيط خطوة، وليست التقييم كله.",
+            "en": "Repeating the ECG is one step, not the whole assessment."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "سؤال تطبيق: ينقل المبدأ إلى حالة جديدة بدل إعادة الحالة نفسها.",
+        "en": "An application question: it moves the principle to a new case instead of repeating the same one."
+      },
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "dok": 4,
+      "prompt": {
+        "ar": "حالتان: الأولى تخطيطها غير طبيعي، والثانية تخطيطها طبيعي مع استمرار الألم. ما الذي يغيّر القرار بينهما، وما الذي لا يغيّره؟",
+        "en": "Two cases: one with an abnormal ECG, one with a normal ECG and continuing pain. What changes the decision between them, and what does not?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "يغيّره وجود تغيّرات في التخطيط؛ ولا يغيّره استمرار الألم لأنه سبب للتقييم في الحالتين",
+            "en": "The ECG changes it; continuing pain does not, because it warrants assessment in both"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح: الألم المستمر يستدعي التقييم في الحالتين، والتخطيط هو ما يفرّق بين المسارين.",
+            "en": "Correct: continuing pain calls for assessment in both, and the ECG is what separates the two paths."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "يغيّره استمرار الألم وحده، والتخطيط مجرد تأكيد",
+            "en": "Continuing pain alone changes it; the ECG is only confirmation"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "التخطيط هو الذي يحدّد الحاجة إلى التدخل العاجل.",
+            "en": "The ECG is what determines the need for urgent intervention."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "لا شيء يغيّر القرار: القرار واحد في الحالتين",
+            "en": "Nothing changes it: the decision is the same in both"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "المسار يختلف فعلاً؛ الادّعاء بأن القرار واحد يتجاهل الفرق.",
+            "en": "The path does differ; claiming the decision is the same ignores the difference."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "سؤال استدلال ممتد: يطلب المقارنة والفصل بين ما يغيّر القرار وما لا يغيّره، وهو أعلى مستوى في هذا التقييم.",
+        "en": "Extended reasoning: it asks the student to compare and to separate what changes the decision from what does not — the highest level in this assessment."
+      },
+      "sources": [
+        {
+          "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+        }
+      ]
+    }
+  ],
+  "grading": {
+    "method": {
+      "ar": "كل سؤال يحمل وزناً بقدر عمقه المعرفي (DOK 1 = 1، DOK 2 = 2، DOK 3 = 3، DOK 4 = 4). الدرجة = مجموع أوزان الإجابات الصحيحة ÷ مجموع كل الأوزان. النطاقات متلاصقة: الحد الأدنى داخل، والحد الأعلى خارج.",
+      "en": "Each question is weighted by its depth (DOK 1 = 1, DOK 2 = 2, DOK 3 = 3, DOK 4 = 4). The score is the weight of the correct answers over the total weight. The bands are contiguous: min inclusive, max exclusive."
+    },
+    "bands": [
+      {
+        "id": "foundation",
+        "min": 0.0,
+        "max": 0.5,
+        "label": {
+          "ar": "أساس",
+          "en": "Foundation"
+        },
+        "message": {
+          "ar": "أجبت على أسئلة التذكّر. الخطوة التالية هي فهم الأسباب، لا حفظ الخطوات.",
+          "en": "You answered the recall questions. The next step is understanding the reasons, not memorising the steps."
+        }
+      },
+      {
+        "id": "application",
+        "min": 0.5,
+        "max": 0.8,
+        "label": {
+          "ar": "تطبيق",
+          "en": "Application"
+        },
+        "message": {
+          "ar": "تفهم الخطوات وأسبابها، وتستطيع تطبيقها. راجع أسئلة المقارنة لتصل إلى الاستدلال.",
+          "en": "You understand the steps and their reasons, and can apply them. Review the comparison questions to reach reasoning."
+        }
+      },
+      {
+        "id": "reasoning",
+        "min": 0.8,
+        "max": 1.0,
+        "label": {
+          "ar": "استدلال",
+          "en": "Reasoning"
+        },
+        "message": {
+          "ar": "وصلت إلى مستوى المقارنة والاستدلال. هذا هو المستوى الذي يبدأ منه العمل السريري الحقيقي.",
+          "en": "You reached comparison and reasoning. That is the level real clinical work starts from."
+        }
+      }
+    ]
+  },
+  "outcome": {
+    "fitMessage": {
+      "ar": "إذا أحببت التفكير الهادئ تحت الضغط وربط الأعراض بالدليل، فقد يناسبك مسار القلب.",
+      "en": "If you enjoyed calm thinking under pressure and linking symptoms to evidence, the cardiology path may suit you."
+    },
+    "nextSteps": [
+      {
+        "ar": "جرّب حالة في الجهاز التنفسي لترى الفرق بين التخصصين.",
+        "en": "Try a respiratory case to see how the two specialties differ."
+      },
+      {
+        "ar": "راجع مصادر هذه الحالة قبل الجلسة القادمة مع المرشد.",
+        "en": "Review this case's sources before your next session with the advisor."
+      }
+    ],
+    "relatedSpecialties": [
+      "respiratory",
+      "internal-medicine"
+    ],
+    "image": {
+      "file": "cardiology-consult.jpg",
+      "caption": {
+        "ar": "جلسة مع المرشد بعد الحالة",
+        "en": "A session with the advisor after the case"
+      },
+      "credit": "Pexels 4266939 — Pexels License (free to use)",
+      "altText": {
+        "ar": "طبيب يتحدث مع طالبة في العيادة",
+        "en": "A doctor talking with a student in the clinic"
+      }
+    }
+  },
+  "sources": [
+    {
+      "label": "EXAMPLE PLACEHOLDER — replace with the source you teach from"
+    }
+  ]
+}

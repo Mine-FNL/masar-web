@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 1,
+  "id": "medicine-cardiology-ami-day1",
+  "track": {
+    "id": "medicine",
+    "name": {
+      "ar": "الطب",
+      "en": "Medicine"
+    }
+  },
+  "specialty": {
+    "id": "cardiology",
+    "name": {
+      "ar": "قلب",
+      "en": "Cardiology"
+    }
+  },
+  "level": "intermediate",
+  "dok": 3,
+  "title": {
+    "ar": "يوم في حياة طبيب قلب: ألم في الصدر",
+    "en": "A Day in a Cardiologist's Life: Chest Pain"
+  },
+  "summary": {
+    "ar": "رجل في السادسة والخمسين يصل الطوارئ بألم صدر منذ أربعين دقيقة. أنت الطالب المرافق للفريق: تقرأ التخطيط، وتقرر الخطوة التالية، ثم تراجع ما قررته.",
+    "en": "A 56-year-old man arrives in the emergency department with forty minutes of chest pain. You are the student with the team: you read the tracing, you make the next call, then you review it."
+  },
+  "estimatedMinutes": 14,
+  "background": {
+    "file": "background-day.jpg",
+    "caption": {
+      "ar": "قسم القلب في الصباح",
+      "en": "The cardiology department in the morning"
+    },
+    "credit": "Pexels 4421501 — Pexels License (free to use)",
+    "altText": {
+      "ar": "غرفة في قسم القلب بأجهزتها الطبية",
+      "en": "A room in the cardiology department with its equipment"
+    }
+  },
+  "cover": {
+    "file": "cardiology-review.jpg",
+    "caption": {
+      "ar": "الطبيب يراجع التخطيط مع المريض",
+      "en": "The doctor reviewing the tracing with the patient"
+    },
+    "credit": "Pexels 8460126 — Pexels License (free to use)",
+    "altText": {
+      "ar": "طبيب يراجع نتيجة التخطيط مع مريض",
+      "en": "A doctor reviewing an ECG result with a patient"
+    }
+  },
+  "scenario": [
+    {
+      "id": "step-1",
+      "kind": "narrative",
+      "dok": 2,
+      "text": {
+        "ar": "الساعة الثامنة صباحاً. رجل في السادسة والخمسين، مدخّن، يصل الطوارئ وهو يمسك صدره: ألم ضاغط منذ أربعين دقيقة، يمتد إلى الذراع اليسرى، مع تعرّق وضيق نفس. الضغط ١٤٥/٩٠ والنبض ٩٨.",
+        "en": "Eight in the morning. A 56-year-old smoker walks into the emergency department holding his chest: forty minutes of pressure-like pain spreading to the left arm, with sweating and breathlessness. Blood pressure 145/90, pulse 98."
+      },
+      "image": {
+        "file": "cardiology-cover.jpg",
+        "caption": {
+          "ar": "المريض يصل الطوارئ",
+          "en": "The patient arrives"
+        },
+        "credit": "Pexels 7108359 — Pexels License (free to use)",
+        "altText": {
+          "ar": "مريض مستلقٍ وأقطاب التخطيط موصولة بصدره",
+          "en": "A patient lying down with ECG leads on the chest"
+        }
+      },
+      "sources": [
+        {
+          "label": "2021 AHA/ACC Chest Pain Guideline",
+          "citation": "Circulation, 2021",
+          "url": "https://doi.org/10.1161/CIR.0000000000001029"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "kind": "decision",
+      "dok": 2,
+      "text": {
+        "ar": "أمامك ثلاث خطوات ممكنة. الألم مستمر والوقت يمضي. ماذا تطلب أولاً؟",
+        "en": "Three moves are possible. The pain continues and time is passing. What do you ask for first?"
+      },
+      "choices": [
+        {
+          "id": "ecg",
+          "correct": true,
+          "text": {
+            "ar": "تخطيط قلب خلال عشر دقائق",
+            "en": "A 12-lead ECG within ten minutes"
+          },
+          "feedback": {
+            "ar": "صحيح. التخطيط هو ما يفرّق بين جلطة تحتاج إعادة تروية وبين ألم بلا ارتفاع في المقطع ST، ويجب أن يُجرى خلال عشر دقائق من الوصول.",
+            "en": "Correct. The ECG is what separates an infarction that needs reperfusion from pain without ST elevation, and it must be done within ten minutes of arrival."
+          }
+        },
+        {
+          "id": "troponin",
+          "correct": false,
+          "text": {
+            "ar": "أنتظر نتيجة التروبونين أولاً",
+            "en": "Wait for the troponin result first"
+          },
+          "feedback": {
+            "ar": "التروبونين قد يكون طبيعياً في أول ساعات الألم. انتظاره وحده يؤخّر قرار إعادة التروية في حالة ارتفاع ST.",
+            "en": "Troponin can be normal in the first hours. Waiting for it alone delays the reperfusion decision when ST is elevated."
+          }
+        },
+        {
+          "id": "xray",
+          "correct": false,
+          "text": {
+            "ar": "أطلب صورة صدر أولاً",
+            "en": "Order a chest X-ray first"
+          },
+          "feedback": {
+            "ar": "الصورة لا تستبعد الجلطة ولا تسرّع القرار. مكانها بعد التخطيط، لا قبله.",
+            "en": "A chest film neither excludes infarction nor speeds the decision. It belongs after the ECG, not before."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": "2021 AHA/ACC Chest Pain Guideline",
+          "citation": "Circulation, 2021",
+          "url": "https://doi.org/10.1161/CIR.0000000000001029"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "kind": "reveal",
+      "dok": 3,
+      "text": {
+        "ar": "التخطيط جاهز: ارتفاع في المقطع ST في المسارات II وIII وaVF. هذا احتشاء في الجدار السفلي، والشريان المسؤول في الغالب الأيمن. القرار الآن لم يعد لك وحدك: يجب إبلاغ الطبيب المسؤول فوراً.",
+        "en": "The tracing is ready: ST elevation in leads II, III and aVF. This is an inferior infarction, and the culprit is usually the right coronary artery. The decision is no longer yours alone: the responsible doctor must be told at once."
+      },
+      "image": {
+        "file": "cardiology-ecg.jpg",
+        "caption": {
+          "ar": "التخطيط يظهر ارتفاع ST",
+          "en": "The tracing shows ST elevation"
+        },
+        "credit": "Pexels 8460227 — Pexels License (free to use)",
+        "altText": {
+          "ar": "شاشة تخطيط القلب أثناء الفحص",
+          "en": "A cardiac monitor during the examination"
+        }
+      },
+      "sources": [
+        {
+          "label": "ESC 2023 Guidelines for the management of acute coronary syndromes",
+          "citation": "European Heart Journal, 2023",
+          "url": "https://doi.org/10.1093/eurheartj/ehad191"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "kind": "decision",
+      "dok": 3,
+      "text": {
+        "ar": "الطبيب المسؤول يسألك: ما الخطوة التالية الآن؟",
+        "en": "The responsible doctor asks you: what is the next step now?"
+      },
+      "choices": [
+        {
+          "id": "pci",
+          "correct": true,
+          "text": {
+            "ar": "أسبرين فوراً وتفعيل قسطرة القلب",
+            "en": "Aspirin now and activate the cath lab"
+          },
+          "feedback": {
+            "ar": "صحيح. مع ارتفاع ST، إعادة التروية بالقسطرة هي العلاج، والهدف وصول المريض إلى القسطرة خلال ٩٠ دقيقة من الباب. الأسبرين يبدأ فوراً ما لم يكن هناك مانع.",
+            "en": "Correct. With ST elevation, reperfusion by PCI is the treatment, with a door-to-device target of 90 minutes. Aspirin starts at once unless contraindicated."
+          }
+        },
+        {
+          "id": "wait",
+          "correct": false,
+          "text": {
+            "ar": "نكرّر التروبونين بعد ساعتين ثم نقرر",
+            "en": "Repeat troponin in two hours, then decide"
+          },
+          "feedback": {
+            "ar": "الانتظار في وجود ارتفاع ST يعني خسارة عضلة قلبية قابل للإنقاذ. التروبونين يؤكد الضرر ولا يؤخّر إعادة التروية.",
+            "en": "Waiting with ST elevation means losing salvageable heart muscle. Troponin confirms injury; it does not delay reperfusion."
+          }
+        },
+        {
+          "id": "discharge",
+          "correct": false,
+          "text": {
+            "ar": "نعطيه مسكّناً ونعيد التقييم في العيادة",
+            "en": "Give analgesia and reassess in clinic"
+          },
+          "feedback": {
+            "ar": "هذا خيار خطر: احتشاء ST في طوره الحاد لا يُعالج في العيادة، والتأخير يزيد الوفيات.",
+            "en": "This is the dangerous option: an acute ST-elevation infarction is not managed in clinic, and delay raises mortality."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESC 2023 Guidelines for the management of acute coronary syndromes",
+          "citation": "European Heart Journal, 2023",
+          "url": "https://doi.org/10.1093/eurheartj/ehad191"
+        }
+      ]
+    }
+  ],
+  "assessment": [
+    {
+      "id": "q1",
+      "dok": 1,
+      "prompt": {
+        "ar": "ما الوسيلة التي طُلبت أولاً لتقييم ألم الصدر في هذه الحالة؟",
+        "en": "Which test was ordered first to assess the chest pain in this case?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "تخطيط القلب",
+            "en": "ECG"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح، وهو ما فعلته في الحالة.",
+            "en": "Correct — that is what you did in the case."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "التروبونين",
+            "en": "Troponin"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "يُطلب أيضاً، لكنه ليس الأول ولا يحكم على الحاجة لإعادة التروية.",
+            "en": "It is also ordered, but it is not first and does not decide reperfusion."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "صورة الصدر",
+            "en": "Chest X-ray"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "تفيد في أسباب أخرى للألم، ولا تكشف احتشاء عضلة القلب.",
+            "en": "It helps with other causes of pain; it does not show myocardial infarction."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "التخطيط خلال عشر دقائق هو المعيار في ألم الصدر المشتبه، لأنه يوجّه كل ما بعده.",
+        "en": "An ECG within ten minutes is the standard in suspected chest pain, because it directs everything that follows."
+      },
+      "sources": [
+        {
+          "label": "2021 AHA/ACC Chest Pain Guideline",
+          "citation": "Circulation, 2021",
+          "url": "https://doi.org/10.1161/CIR.0000000000001029"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "dok": 2,
+      "prompt": {
+        "ar": "ماذا يعني ارتفاع ST في المسارات II وIII وaVF؟",
+        "en": "What does ST elevation in leads II, III and aVF mean?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "احتشاء في الجدار السفلي، والشريان المسؤول غالباً الأيمن",
+            "en": "Inferior infarction, usually the right coronary artery"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح. هذه المسارات تنظر إلى الجدار السفلي.",
+            "en": "Correct. Those leads look at the inferior wall."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "احتشاء في الجدار الأمامي",
+            "en": "Anterior infarction"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الجدار الأمامي يظهر في V1–V4.",
+            "en": "The anterior wall shows in V1–V4."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "التهاب تامور",
+            "en": "Pericarditis"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "التهاب التامور يعطي ارتفاعاً منتشراً وألماً يتغير مع الوضعية، لا ارتفاعاً في مسارات سفلى محددة.",
+            "en": "Pericarditis gives widespread elevation with positional pain, not elevation limited to inferior leads."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "موضع الألم على التخطيط يخبرك أي جدار تأثر، ومنه أي شريان تبحث عنه في القسطرة.",
+        "en": "Where the change appears on the tracing tells you which wall is injured, and therefore which artery the cath lab is looking for."
+      },
+      "sources": [
+        {
+          "label": "ESC 2023 Guidelines for the management of acute coronary syndromes",
+          "citation": "European Heart Journal, 2023",
+          "url": "https://doi.org/10.1093/eurheartj/ehad191"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "dok": 2,
+      "prompt": {
+        "ar": "أي دواء يُبدأ فوراً في هذه الحالة؟",
+        "en": "Which drug is started immediately in this case?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "أسبرين",
+            "en": "Aspirin"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح. الأسبرين يقلّل الوفيات في الاحتشاء ويُعطى مبكراً ما لم يوجد مانع.",
+            "en": "Correct. Aspirin reduces mortality in infarction and is given early unless contraindicated."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "مضاد حيوي",
+            "en": "An antibiotic"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "لا دور للمضاد الحيوي هنا؛ السبب ليس التهاباً جرثومياً.",
+            "en": "There is no role for an antibiotic here; the cause is not bacterial."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "لا شيء حتى تأتي نتيجة التروبونين",
+            "en": "Nothing until troponin returns"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الأسبرين لا ينتظر نتيجة تحليل.",
+            "en": "Aspirin does not wait for a lab result."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "الأسبرين جزء من العلاج الأولي في كل احتشاء مشتبه، ويُعطى مع تفعيل مسار إعادة التروية.",
+        "en": "Aspirin is part of initial therapy in every suspected infarction, given alongside activation of the reperfusion pathway."
+      },
+      "sources": [
+        {
+          "label": "ESC 2023 Guidelines for the management of acute coronary syndromes",
+          "citation": "European Heart Journal, 2023",
+          "url": "https://doi.org/10.1093/eurheartj/ehad191"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "dok": 3,
+      "prompt": {
+        "ar": "لماذا لا يكفي انتظار التروبونين لاتخاذ قرار إعادة التروية؟",
+        "en": "Why is waiting for troponin not enough to decide on reperfusion?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "لأنه قد يكون طبيعياً في أول ساعات الألم بينما التخطيط يظهر ارتفاع ST",
+            "en": "Because it can be normal in the first hours while the ECG already shows ST elevation"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح. الوقت يعني عضلة قلبية: القرار في ارتفاع ST يُبنى على التخطيط.",
+            "en": "Correct. Time means muscle: with ST elevation the decision rests on the tracing."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "لأن التروبونين غير دقيق دائماً",
+            "en": "Because troponin is always inaccurate"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "التروبونين دقيق جداً؛ المشكلة في توقيته لا في دقته.",
+            "en": "Troponin is highly accurate; the issue is timing, not accuracy."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "لأن القسطرة تُجرى لكل ألم صدر",
+            "en": "Because every chest pain goes to the cath lab"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "لا، القسطرة لمن يحتاجها بحسب التخطيط والمخاطر، لا لكل ألم.",
+            "en": "No — the cath lab is for those who need it by tracing and risk, not every pain."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "التخطيط يقرر في الدقائق، والتروبونين يؤكد في الساعات. تأخير القرار لانتظار التأكيد يكلّف عضلة.",
+        "en": "The ECG decides in minutes; troponin confirms over hours. Delaying the decision for confirmation costs muscle."
+      },
+      "sources": [
+        {
+          "label": "ESC 2023 Guidelines for the management of acute coronary syndromes",
+          "citation": "European Heart Journal, 2023",
+          "url": "https://doi.org/10.1093/eurheartj/ehad191"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "dok": 3,
+      "prompt": {
+        "ar": "ما هدف الوقت من وصول المريض إلى فتح الشريان في القسطرة الأولية؟",
+        "en": "What is the door-to-device time target for primary PCI?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "٩٠ دقيقة",
+            "en": "90 minutes"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح، ٩٠ دقيقة في المركز الذي يجرّي القسطرة، وتُمدّد إلى ١٢٠ عند الحاجة لنقل المريض.",
+            "en": "Correct: 90 minutes at a PCI centre, extended to 120 when transfer is required."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "٢٤ ساعة",
+            "en": "24 hours"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "٢٤ ساعة تعني فقدان العضلة القابلة للإنقاذ.",
+            "en": "Twenty-four hours means the salvageable muscle is gone."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "لا يوجد هدف زمني",
+            "en": "There is no time target"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الهدف الزمني هو جوهر العلاج: العضلة تُنقذ بالدقائق.",
+            "en": "The time target is the treatment: muscle is saved in minutes."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "الزمن في احتشاء ST هو العلاج. كل تأخير يزيد حجم الاحتشاء والمضاعفات.",
+        "en": "Time is the therapy in ST-elevation infarction. Every delay increases infarct size and complications."
+      },
+      "sources": [
+        {
+          "label": "ESC 2023 Guidelines for the management of acute coronary syndromes",
+          "citation": "European Heart Journal, 2023",
+          "url": "https://doi.org/10.1093/eurheartj/ehad191"
+        }
+      ]
+    }
+  ],
+  "outcome": {
+    "fitMessage": {
+      "ar": "أعجبتك اللحظة التي يصبح فيها التخطيط قراراً: أن تقرأ سطراً واحداً فيغيّر مسار مريض.",
+      "en": "What engaged you was the moment a tracing becomes a decision: one line read, and a patient's course changes."
+    },
+    "nextSteps": [
+      {
+        "ar": "اقرأ أساسيات تخطيط القلب: المسارات الاثنا عشر وما ينظر إليه كل منها.",
+        "en": "Learn ECG basics: the twelve leads and what each one looks at."
+      },
+      {
+        "ar": "تدرّب على تمييز ارتفاع ST عن غيره في أمثلة محلولة.",
+        "en": "Practise telling ST elevation from its look-alikes on worked examples."
+      },
+      {
+        "ar": "زر مركز قسطرة أو شاهد جلسة تخطيط كاملة بإشراف.",
+        "en": "Visit a cath lab, or watch a full ECG session with supervision."
+      }
+    ],
+    "relatedSpecialties": [
+      "emergency-medicine",
+      "internal-medicine"
+    ]
+  },
+  "sources": [
+    {
+      "label": "ESC 2023 Guidelines for the management of acute coronary syndromes",
+      "citation": "European Heart Journal, 2023",
+      "url": "https://doi.org/10.1093/eurheartj/ehad191"
+    },
+    {
+      "label": "2021 AHA/ACC Chest Pain Guideline",
+      "citation": "Circulation, 2021",
+      "url": "https://doi.org/10.1161/CIR.0000000000001029"
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "id": "medicine-cardiology-tachycardia-day1",
+  "track": {
+    "id": "medicine",
+    "name": {
+      "ar": "الطب",
+      "en": "Medicine"
+    }
+  },
+  "specialty": {
+    "id": "cardiology",
+    "name": {
+      "ar": "قلب",
+      "en": "Cardiology"
+    }
+  },
+  "level": "intermediate",
+  "dok": 3,
+  "title": {
+    "ar": "يوم في حياة طبيب قلب: قلب سريع فجأة",
+    "en": "A Day in a Cardiologist's Life: A Sudden Racing Heart"
+  },
+  "summary": {
+    "ar": "شابة في الرابعة والعشرين تصل بعرقلة قلب بدأت فجأة قبل نصف ساعة. النبض ١٨٠ منتظم والضغط مستقر. مهمتك: تهدئة النظم ثم معرفة سبب ما حدث.",
+    "en": "A 24-year-old arrives with palpitations that started suddenly thirty minutes ago. Pulse 180 and regular, blood pressure stable. Your job: settle the rhythm, then understand what happened."
+  },
+  "estimatedMinutes": 12,
+  "background": {
+    "file": "background-day.jpg",
+    "caption": {
+      "ar": "قسم القلب في الصباح",
+      "en": "The cardiology department in the morning"
+    },
+    "credit": "Pexels 4421501 — Pexels License (free to use)",
+    "altText": {
+      "ar": "غرفة في قسم القلب بأجهزتها الطبية",
+      "en": "A room in the cardiology department with its equipment"
+    }
+  },
+  "cover": {
+    "file": "cardiology-stress.jpg",
+    "caption": {
+      "ar": "اختبار الجهد بعد استقرار النظم",
+      "en": "The stress test after the rhythm settles"
+    },
+    "credit": "Pexels 8460228 — Pexels License (free to use)",
+    "altText": {
+      "ar": "اختبار جهد على السير في قسم القلب",
+      "en": "A treadmill stress test in the cardiology department"
+    }
+  },
+  "scenario": [
+    {
+      "id": "step-1",
+      "kind": "narrative",
+      "dok": 2,
+      "text": {
+        "ar": "الساعة العاشرة. شابة في الرابعة والعشرين تقول إن قلبها بدأ يخفق فجأة قبل نصف ساعة وهي جالسة، بلا ألم صدر ولا إغماء. الضغط ١١٨/٧٤، النبض ١٨٠ منتظم، والتخطيط موجات ضيقة منتظمة بلا موجات P واضحة.",
+        "en": "Ten o'clock. A 24-year-old says her heart suddenly began racing thirty minutes ago while she was sitting, with no chest pain and no fainting. Blood pressure 118/74, pulse 180 and regular, and the tracing shows narrow regular complexes with no clear P waves."
+      },
+      "image": {
+        "file": "cardiology-monitor.jpg",
+        "caption": {
+          "ar": "التخطيط عند الوصول",
+          "en": "The tracing on arrival"
+        },
+        "credit": "Pexels 9408871 — Pexels License (free to use)",
+        "altText": {
+          "ar": "شاشة مراقبة القلب مع ورقة التخطيط",
+          "en": "A cardiac monitor with the tracing on paper"
+        }
+      },
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "kind": "decision",
+      "dok": 3,
+      "text": {
+        "ar": "المريضة واعية والضغط مستقر. ما الخطوة الأولى؟",
+        "en": "The patient is alert and her blood pressure is stable. What is the first step?"
+      },
+      "choices": [
+        {
+          "id": "vagal",
+          "correct": true,
+          "text": {
+            "ar": "مناروة مبهمية: تعديل مناورة فالسالفا مع رفع الساقين",
+            "en": "A vagal manoeuvre: a modified Valsalva with leg raise"
+          },
+          "feedback": {
+            "ar": "صحيح. في تسرّع فوق بطيني ضيّق ومنتظم ومريض مستقر، المناورة المبهمية هي الأولى، وأكثر أماناً من أي دواء.",
+            "en": "Correct. In a narrow, regular supraventricular tachycardia with a stable patient, a vagal manoeuvre comes first and is safer than any drug."
+          }
+        },
+        {
+          "id": "amio",
+          "correct": false,
+          "text": {
+            "ar": "أميودارون وريدياً فوراً",
+            "en": "IV amiodarone at once"
+          },
+          "feedback": {
+            "ar": "الأميودارون دواء بطيء الأثر وله تأثير على الضغط، وليس الخيار الأول في تسرّع فوق بطيني مستقر.",
+            "en": "Amiodarone acts slowly and lowers pressure; it is not the first choice in stable supraventricular tachycardia."
+          }
+        },
+        {
+          "id": "shock",
+          "correct": false,
+          "text": {
+            "ar": "صدمة كهربائية فورية",
+            "en": "Immediate electrical cardioversion"
+          },
+          "feedback": {
+            "ar": "الصدمة لمريض غير مستقر: انخفاض ضغط، إغماء، أو ألم صدر مستمر. هنا المريضة مستقرة.",
+            "en": "Cardioversion is for the unstable patient: low pressure, syncope, or ongoing chest pain. She is stable."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "kind": "reveal",
+      "dok": 2,
+      "text": {
+        "ar": "بعد المناورة يعود النظم إلى الجيب خلال ثوان: النبض ٧٨، والمريضة تشعر براحة فورية. التخطيط بعد التحوّل مهم الآن: هل توجد علامات تحفيز مبكر (WPW)؟",
+        "en": "After the manoeuvre the rhythm returns to sinus within seconds: pulse 78, and she feels immediate relief. The post-conversion tracing matters now: is there pre-excitation (WPW)?"
+      },
+      "image": {
+        "file": "cardiology-review.jpg",
+        "caption": {
+          "ar": "مراجعة التخطيط بعد عودة النظم",
+          "en": "Reviewing the tracing after conversion"
+        },
+        "credit": "Pexels 8460126 — Pexels License (free to use)",
+        "altText": {
+          "ar": "طبيب يراجع نتيجة التخطيط مع المريض",
+          "en": "A doctor reviewing the ECG result with the patient"
+        }
+      },
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "kind": "decision",
+      "dok": 3,
+      "text": {
+        "ar": "النبض مستقر والتخطيط بعد التحوّل طبيعي. ماذا تفعل قبل خروجها؟",
+        "en": "The rhythm is stable and the post-conversion tracing is normal. What do you do before she leaves?"
+      },
+      "choices": [
+        {
+          "id": "workup",
+          "correct": true,
+          "text": {
+            "ar": "تخطيط اثنا عشر مساراً وأخذ القصة، ثم متابعة عيادة القلب",
+            "en": "A 12-lead ECG, a full history, then cardiology follow-up"
+          },
+          "feedback": {
+            "ar": "صحيح. النوبة الأولى تحتاج تشخيصاً كاملاً: تخطيط كامل، وتاريخ النوبات، وخطة متابعة. التسرّع فوق البطيني المتكرر قد يحتاج دراسة electrophysiology.",
+            "en": "Correct. A first episode needs a full diagnosis: a complete tracing, the history of attacks, and a follow-up plan. Recurrent supraventricular tachycardia may need an electrophysiology study."
+          }
+        },
+        {
+          "id": "discharge",
+          "correct": false,
+          "text": {
+            "ar": "خروج مباشر بلا متابعة",
+            "en": "Discharge with no follow-up"
+          },
+          "feedback": {
+            "ar": "الخروج بلا تشخيص ولا متابعة يترك نوبة أخرى بلا خطة، ويفوّت تشخيص مسارات إضافية.",
+            "en": "Discharging without a diagnosis or a plan leaves the next attack unmanaged and misses accessory pathways."
+          }
+        },
+        {
+          "id": "amio2",
+          "correct": false,
+          "text": {
+            "ar": "أميودارون يومياً مدى الحياة",
+            "en": "Lifelong daily amiodarone"
+          },
+          "feedback": {
+            "ar": "لا يبدأ دواء مدى الحياة لنوبة أولى مستقرة؛ الخطة تُبنى على تكرار النوبات وتشخيص المسارات.",
+            "en": "Lifelong drug therapy is not started for a single stable episode; the plan follows recurrence and pathway diagnosis."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    }
+  ],
+  "assessment": [
+    {
+      "id": "q1",
+      "dok": 1,
+      "prompt": {
+        "ar": "بماذا تصف هذا النظم: سريع، منتظم، وموجاته ضيقة؟",
+        "en": "How do you describe this rhythm: fast, regular, narrow complex?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "تسرّع فوق بطيني",
+            "en": "Supraventricular tachycardia"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح، وهذا الوصف هو ما يقود الخطة.",
+            "en": "Correct — and that description is what drives the plan."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "رجفان بطيني",
+            "en": "Ventricular fibrillation"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الرجفان البطيني غير منتظم ولا نبض معه، وفيه خطر موت فوري.",
+            "en": "Ventricular fibrillation is irregular, pulseless, and immediately fatal."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "نظم جيبي طبيعي",
+            "en": "Normal sinus rhythm"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الجيب طبيعي التردد (٦٠–١٠٠) وفيه موجات P واضحة.",
+            "en": "Sinus rhythm is 60–100 with clear P waves."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "سرعة + انتظام + موجات ضيقة = تسرّع فوق بطيني حتى يثبت العكس.",
+        "en": "Fast, regular, narrow complexes = supraventricular tachycardia until proven otherwise."
+      },
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "dok": 2,
+      "prompt": {
+        "ar": "ما الخطوة الأولى في تسرّع فوق بطيني عند مريض مستقر؟",
+        "en": "What is the first step in stable supraventricular tachycardia?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "مناورة مبهمية",
+            "en": "A vagal manoeuvre"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح، وأفضل صيغة هي فالسالفا المعدّلة مع رفع الساقين.",
+            "en": "Correct — best performed as a modified Valsalva with leg raise."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "صدمة كهربائية",
+            "en": "Electrical cardioversion"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الصدمة للمريض غير المستقر.",
+            "en": "Cardioversion is for the unstable patient."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "دواء مضاد للعدوى",
+            "en": "An antimicrobial"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "لا علاقة للعدوى بهذا النظم.",
+            "en": "Infection has nothing to do with this rhythm."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "ابدأ بالأقل خطراً والأسرع أثراً: المناورة المبهمية. الدواء والصدمة بعده.",
+        "en": "Start with the safest and fastest: the vagal manoeuvre. Drugs and shock come after."
+      },
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "dok": 2,
+      "prompt": {
+        "ar": "متى تكون الصدمة الكهربائية الخيار الأول؟",
+        "en": "When is electrical cardioversion the first choice?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "عند عدم الاستقرار: هبوط ضغط، إغماء، أو ألم صدر مستمر",
+            "en": "When unstable: low pressure, syncope, or ongoing chest pain"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح. استقرار المريض هو ما يحدد الطريق، لا شكل التخطيط وحده.",
+            "en": "Correct. Stability decides the route, not the tracing alone."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "عند كل تسرّع فوق بطيني",
+            "en": "For every supraventricular tachycardia"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "معظم الحالات تُعالج أولاً بطرق أبسط وأقل خطراً.",
+            "en": "Most cases are first managed by simpler, safer means."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "عندما يطلب المريض ذلك",
+            "en": "When the patient asks for it"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "القرار سريري بحسب الحالة، لا بحسب الطلب.",
+            "en": "The decision is clinical, not on request."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "الحالة هي التي تحدد السرعة: مريض غير مستقر يحتاج تدخلاً فورياً، ومستقر يحتاج ترتيباً.",
+        "en": "The situation sets the speed: an unstable patient needs immediate action, a stable one needs sequence."
+      },
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "dok": 3,
+      "prompt": {
+        "ar": "لماذا نبحث عن علامات تحفيز مبكر (WPW) بعد عودة النظم؟",
+        "en": "Why look for pre-excitation (WPW) after the rhythm settles?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "لأن بعض الأدوية التي تبطئ العقدة الأذينية البطينية قد تضرّ في وجود مسار إضافي",
+            "en": "Because some AV-nodal blocking drugs can be harmful when an accessory pathway exists"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح. في وجود مسار إضافي قد تزيد هذه الأدوية سرعة التوصيل عبر المسار وتؤدي إلى نظم خطر.",
+            "en": "Correct. With an accessory pathway those drugs can accelerate conduction down the pathway and provoke a dangerous rhythm."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "لأن التحفيز المبكر يمنع النوبات",
+            "en": "Because pre-excitation prevents episodes"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "بل هو سبب قابل للعلاج بالنبض، لا حماية منه.",
+            "en": "It is a treatable cause by ablation, not protection from it."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "لا داعي للبحث عنه بعد التحوّل",
+            "en": "There is no need to look after conversion"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "التخطيط بعد التحوّل هو أفضل فرصة لكشفه.",
+            "en": "The post-conversion tracing is the best chance to find it."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "التخطيط بعد التحوّل يغيّر كل خطة العلاج لاحقاً: أدوية قد تُمنع، وقد تُطرح القسطرة العلاجية.",
+        "en": "The post-conversion tracing changes the whole later plan: some drugs are avoided, and ablation may be offered."
+      },
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "dok": 3,
+      "prompt": {
+        "ar": "متى نحيل مريض التسرّع فوق البطيني إلى دراسة الكهربية الفيزيولوجية؟",
+        "en": "When is a patient with supraventricular tachycardia referred for an electrophysiology study?"
+      },
+      "choices": [
+        {
+          "id": "a",
+          "text": {
+            "ar": "عند تكرار النوبات أو أعراض شديدة رغم العلاج",
+            "en": "With recurrent episodes or severe symptoms despite therapy"
+          },
+          "correct": true,
+          "feedback": {
+            "ar": "صحيح. تكرار النوبات أو شدّة الأعراض هو ما يفتح باب الاستئصال بالقسطرة.",
+            "en": "Correct. Recurrence or severity is what opens the door to catheter ablation."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "ar": "لكل مريض بعد أول نوبة",
+            "en": "For everyone after a first episode"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "النوبة الأولى المستقرة لا تستدعي دراسة تداخلية.",
+            "en": "A stable first episode does not warrant an invasive study."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "ar": "لا تُحال أبداً",
+            "en": "Never"
+          },
+          "correct": false,
+          "feedback": {
+            "ar": "الاستئصال بالقسطرة علاج فعّال للكثيرين.",
+            "en": "Catheter ablation is effective for many patients."
+          }
+        }
+      ],
+      "explanation": {
+        "ar": "القرار يعتمد على تكرار النوبات وشدّتها وما يفضّله المريض بعد شرح الخيارات.",
+        "en": "The decision rests on recurrence, severity, and the patient's choice after the options are explained."
+      },
+      "sources": [
+        {
+          "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+          "citation": "European Heart Journal, 2019",
+          "url": "https://doi.org/10.1093/eurheartj/ehz467"
+        }
+      ]
+    }
+  ],
+  "outcome": {
+    "fitMessage": {
+      "ar": "ما لفتك هو اللغز الكهربائي: قلب سريع، سطر تخطيط، وقرار يعيد النظم في ثوان.",
+      "en": "What drew you was the electrical puzzle: a racing heart, one line of tracing, and a decision that restores rhythm in seconds."
+    },
+    "nextSteps": [
+      {
+        "ar": "تعلّم قراءة النظم السريعة: ضيّق مقابل عريض، منتظم مقابل غير منتظم.",
+        "en": "Learn to read fast rhythms: narrow versus wide, regular versus irregular."
+      },
+      {
+        "ar": "افهم الفرق بين المريض المستقر وغير المستقر وأثره في القرار.",
+        "en": "Understand stable versus unstable and how it changes the decision."
+      },
+      {
+        "ar": "اقرأ عن الاستئصال بالقسطرة كعلاج جذري للمسارات الإضافية.",
+        "en": "Read about catheter ablation as definitive treatment for accessory pathways."
+      }
+    ],
+    "relatedSpecialties": [
+      "emergency-medicine",
+      "electrophysiology"
+    ]
+  },
+  "sources": [
+    {
+      "label": "ESC 2019 Guidelines for the management of patients with supraventricular tachycardia",
+      "citation": "European Heart Journal, 2019",
+      "url": "https://doi.org/10.1093/eurheartj/ehz467"
+    }
+  ]
+}

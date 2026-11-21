@@ -1,0 +1,190 @@
+/* مسار — the web build.
+   Same field, same ink, same band as the two native builds: the tokens are copied from
+   design/v2/core.css rather than re-invented, so the three builds cannot drift apart by accident. */
+
+@font-face{font-family:"Ruqaa";font-weight:700;src:url("fonts/ArefRuqaa-Bold.ttf")}
+@font-face{font-family:"Ruqaa";font-weight:400;src:url("fonts/ArefRuqaa-Regular.ttf")}
+@font-face{font-family:"Naskh";font-weight:300 800;src:url("fonts/NotoNaskhArabic-VF.ttf")}
+@font-face{font-family:"Alex";font-weight:100 900;src:url("fonts/Alexandria-VF.ttf")}
+@font-face{font-family:"Frau";font-weight:100 900;src:url("fonts/Fraunces-VF.ttf")}
+
+:root{
+  --paper:#F4EBDB;
+  --paper-dim:#EADFC9;
+  --ink:#16110E;
+  --ink-2:#3A2E26;
+  --ink-3:#5C4C40;
+  --rule:rgba(22,17,14,.16);
+  --blood:#A02B22;
+  --cream:#F4EBDB;
+
+  /* The field. One tone across the whole page, never a gradient. */
+  --wash:rgba(207,230,248,.86);
+  --blue-deep:#0E2A47;
+  --blue-1:#0E2A47;
+  --blue-2:rgba(14,42,71,.88);
+  --blue-3:rgba(14,42,71,.72);
+  --blue-rule:rgba(14,42,71,.24);
+  --blue-chip:rgba(14,42,71,.10);
+
+  --band-h:78px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#20191a}
+body{
+  font-family:"Alex","Naskh",system-ui,sans-serif;
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  display:flex;justify-content:center;min-height:100vh;
+}
+.boot{position:fixed;inset:auto 0 40px;text-align:center;color:#8b7c6f;font-size:15px;margin:0}
+body.ready .boot{display:none}
+
+/* ---------------------------------------------------------------- the phone */
+
+.phone{
+  position:relative;width:100%;max-width:430px;min-height:100vh;
+  background:var(--paper);overflow:hidden;display:flex;flex-direction:column;
+}
+@media (min-width:520px){
+  body{align-items:center;padding:28px 0}
+  .phone{min-height:0;height:calc(100vh - 56px);max-height:932px;border-radius:14px;
+         box-shadow:0 22px 60px rgba(0,0,0,.5)}
+}
+
+.screen{
+  position:relative;z-index:1;flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;
+  padding:26px 22px calc(var(--band-h) + 26px);
+  background:transparent;
+}
+.field{position:absolute;inset:0;z-index:0;background:var(--paper)}
+.field img{width:100%;height:100%;object-fit:cover;display:block}
+.field::after{content:"";position:absolute;inset:0;background:var(--wash)}
+.field.paper::after{display:none}
+.field.paper img{display:none}
+
+/* Type on the field is deep blue, never cream: cream on a light field is light on light. */
+.screen.on-photo{color:var(--blue-1)}
+.screen.on-photo .h1,.screen.on-photo .h2,.screen.on-photo .lead{color:var(--blue-1)}
+.screen.on-photo .body{color:var(--blue-2)}
+.screen.on-photo .meta,.screen.on-photo .micro{color:var(--blue-3)}
+.screen.on-photo .rule{background:var(--blue-rule)}
+.screen.on-photo .chip{background:var(--blue-chip)}
+
+/* ---------------------------------------------------------------- type */
+
+.h1{font-family:"Ruqaa",serif;font-weight:700;font-size:34px;line-height:1.28;margin:0}
+.h2{font-family:"Ruqaa",serif;font-weight:700;font-size:23px;line-height:1.35;margin:0}
+.lead{font-family:"Naskh",serif;font-weight:600;font-size:20px;line-height:1.6;margin:0}
+.body{font-family:"Naskh",serif;font-weight:400;font-size:19px;line-height:1.75;margin:0}
+.meta{font-size:14px;font-weight:500;margin:0}
+.micro{font-size:12.5px;font-weight:500;letter-spacing:.01em;margin:0}
+.figure{font-family:"Frau",serif;font-weight:600;font-size:22px;font-variant-numeric:tabular-nums}
+.figure-big{font-family:"Frau",serif;font-weight:600;font-size:46px;line-height:1;font-variant-numeric:tabular-nums}
+.rule{height:1px;background:var(--rule);border:0;margin:0}
+.sp8{height:8px}.sp12{height:12px}.sp16{height:16px}.sp20{height:20px}.sp26{height:26px}.sp34{height:34px}
+
+/* ---------------------------------------------------------------- the band */
+
+.band{
+  position:absolute;z-index:2;left:0;right:0;bottom:0;min-height:var(--band-h);
+  background:var(--blood);color:var(--cream);
+  display:flex;align-items:center;gap:10px;
+  padding:16px 22px;border:0;width:100%;text-align:start;
+  font-family:"Ruqaa",serif;font-weight:700;font-size:21px;cursor:pointer;
+}
+.band[hidden]{display:none}
+.band .arrow{font-family:"Alex";font-weight:400;opacity:.85}
+.band .note{margin-inline-start:auto;font-family:"Alex";font-weight:500;font-size:12.5px;
+            color:rgba(244,235,219,.75);text-align:end;max-width:46%}
+.band:disabled{background:#8a8378;cursor:default}
+.band:not(:disabled):active{background:#8A251D}
+.band.on-paper{background:var(--ink)}
+.band.on-paper:active{background:#2b2320}
+
+/* ---------------------------------------------------------------- pieces */
+
+.row{display:flex;align-items:center;gap:10px}
+.row.top{align-items:flex-start}
+.grow{flex:1;min-width:0}
+
+.card{
+  border:1px solid var(--blue-rule);background:var(--blue-chip);
+  overflow:hidden;cursor:pointer;
+}
+.card.chosen{border:2px solid var(--blood)}
+.card img{width:100%;height:150px;object-fit:cover;display:block}
+.card .inner{padding:13px}
+.card .start{
+  display:flex;align-items:center;padding:10px 13px;
+  border-top:1px solid var(--blue-rule);
+  color:var(--blood);font-size:14px;font-weight:500;
+}
+
+.plate{position:relative;background:#0E2A47;margin:16px 0}
+.plate img{width:100%;display:block}
+.plate .tag{
+  position:absolute;top:0;inset-inline-start:0;background:var(--paper);color:var(--blue-1);
+  font-size:12px;font-weight:600;padding:4px 9px;
+}
+.plate .cap{
+  background:var(--paper);color:var(--ink-3);font-size:12px;font-weight:500;
+  padding:7px 11px;
+}
+.plate.marked{
+  border:1px dashed var(--blue-rule);background:transparent;
+  display:flex;align-items:center;justify-content:center;height:150px;
+  color:var(--blue-3);font-size:14px;font-weight:500;text-align:center;padding:0 18px;
+}
+
+/* The interest test: one statement, five chips, in the order the scale runs. */
+.item{padding:16px 0;border-bottom:1px solid var(--blue-rule)}
+.item .q{font-family:"Naskh",serif;font-weight:600;font-size:19px;line-height:1.6;margin:0 0 12px}
+.scale{display:flex;gap:6px}
+.scale button{
+  flex:1;min-width:0;padding:11px 2px;border:1px solid var(--blue-rule);background:transparent;
+  color:var(--blue-3);font-family:"Alex";font-weight:500;font-size:11.5px;line-height:1.25;
+  cursor:pointer;border-radius:3px;
+}
+.scale button[aria-pressed="true"]{background:var(--blood);border-color:var(--blood);color:var(--cream);font-weight:700}
+
+.choice{
+  display:block;width:100%;text-align:start;padding:15px 16px;margin:0 0 10px;
+  border:1px solid var(--blue-rule);background:var(--blue-chip);color:var(--blue-1);
+  font-family:"Naskh",serif;font-weight:600;font-size:18px;line-height:1.55;cursor:pointer;border-radius:3px;
+}
+.choice.correct{border:2px solid var(--blood);color:var(--blood)}
+.choice.wrong{opacity:.62}
+.choice:disabled{cursor:default}
+
+.verdict{margin:14px 0 0;padding:14px;background:var(--blue-chip);border-inline-start:3px solid var(--blood)}
+.verdict .who{font-family:"Ruqaa",serif;font-weight:700;font-size:19px;color:var(--blood);margin:0 0 6px}
+.verdict p{margin:0}
+
+.sources{margin:14px 0 0;font-size:12.5px;color:var(--blue-3);line-height:1.6}
+.sources summary{cursor:pointer;font-weight:600}
+
+.leader{display:flex;align-items:flex-end;gap:8px;padding:7px 0}
+.leader .lbl{font-size:15px;font-weight:500}
+.leader .dots{flex:1;border-bottom:1px dotted var(--blue-rule);margin-bottom:5px}
+.leader .val{font-family:"Frau",serif;font-weight:600;font-size:17px;font-variant-numeric:tabular-nums}
+
+.scalebar{position:relative;height:44px;margin:6px 0 0}
+.scalebar .track{position:absolute;inset-inline:0;top:20px;height:2px;background:var(--blue-rule)}
+.scalebar .fill{position:absolute;top:20px;height:2px;background:var(--blood)}
+.scalebar .tick{position:absolute;top:8px;width:2px;height:26px;background:var(--blue-1)}
+
+.lang{display:flex;gap:6px;justify-content:flex-end}
+.lang button{
+  border:1px solid currentColor;background:transparent;color:inherit;border-radius:3px;
+  padding:6px 10px;font-family:"Alex";font-size:12.5px;font-weight:600;cursor:pointer;
+}
+.lang button[aria-pressed="true"]{background:currentColor}
+.lang button[aria-pressed="true"] span{mix-blend-mode:difference;color:var(--paper)}
+
+.center{text-align:center}
+.notice{
+  margin:0 0 16px;padding:11px 13px;background:rgba(160,43,34,.10);
+  border-inline-start:3px solid var(--blood);color:var(--blood);font-size:14px;font-weight:600;
+}

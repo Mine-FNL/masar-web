@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "interest-test-v1",
+  "title": {
+    "ar": "ما الذي يستوقفك؟",
+    "en": "What draws you in?"
+  },
+  "summary": {
+    "ar": "أربعة عشر سؤالاً، كل واحد يقع في مستوى عمق معرفي معيّن (DOK 1-3). الأسئلة هنا للتوضيح البنيوي فقط: تُستبدل بأسئلة الدكتورة قبل أن يراها أي طالب.",
+    "en": "Fourteen statements, each tagged with a Webb's Depth-of-Knowledge level (DOK 1-3). These items are a structural example only: they are replaced with the author's own items before any student sees them."
+  },
+  "audience": {
+    "minAge": 14,
+    "maxAge": 18,
+    "note": {
+      "ar": "من ١٤ إلى ١٨ سنة: الجُمل موقفية وملموسة، ولا تفترض معرفة جامعية.",
+      "en": "Ages 14-18: every statement is situational and concrete, and assumes no university-level knowledge."
+    }
+  },
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels": [
+      { "value": 1, "text": { "ar": "لا يشبهني", "en": "Not like me" } },
+      { "value": 2, "text": { "ar": "قليلاً", "en": "A little" } },
+      { "value": 3, "text": { "ar": "أحياناً", "en": "Sometimes" } },
+      { "value": 4, "text": { "ar": "كثيراً", "en": "Often" } },
+      { "value": 5, "text": { "ar": "يشبهني تماماً", "en": "Exactly like me" } }
+    ]
+  },
+  "dimensions": [
+    { "id": "cardiology", "name": { "ar": "القلب", "en": "Cardiology" } },
+    { "id": "respiratory", "name": { "ar": "الجهاز التنفسي", "en": "Respiratory" } },
+    { "id": "internal-medicine", "name": { "ar": "الباطنة", "en": "Internal medicine" } },
+    { "id": "surgery", "name": { "ar": "الجراحة", "en": "Surgery" } },
+    { "id": "diagnostics", "name": { "ar": "التشخيص والتصوير", "en": "Diagnosis and imaging" } }
+  ],
+  "items": [
+    {
+      "id": "i1",
+      "dok": 1,
+      "dimension": "cardiology",
+      "text": {
+        "ar": "أحبّ أن أعرف كيف يعمل القلب قبل أن أسمع أي تفسير.",
+        "en": "I like knowing how the heart works before hearing any explanation."
+      }
+    },
+    {
+      "id": "i2",
+      "dok": 1,
+      "dimension": "cardiology",
+      "text": {
+        "ar": "يستوقفني منظر نبضات القلب على الشاشة.",
+        "en": "A heartbeat on a monitor stops me in my tracks."
+      }
+    },
+    {
+      "id": "i3",
+      "dok": 2,
+      "dimension": "cardiology",
+      "text": {
+        "ar": "أربط بين ألم في الصدر وتعب في الساقين وأفكّر: هل بينهما علاقة؟",
+        "en": "I connect chest pain with tired legs and wonder whether the two are related."
+      }
+    },
+    {
+      "id": "i4",
+      "dok": 1,
+      "dimension": "respiratory",
+      "text": {
+        "ar": "ألاحظ صعوبة التنفّس عند أحدهم قبل أن يقول شيئاً.",
+        "en": "I notice someone struggling to breathe before they say anything."
+      }
+    },
+    {
+      "id": "i5",
+      "dok": 2,
+      "dimension": "respiratory",
+      "text": {
+        "ar": "أرغب في فهم الفرق بين الربو والالتهاب: لماذا يشبهان بعضهما؟",
+        "en": "I want to understand asthma versus infection: why do they look alike?"
+      }
+    },
+    {
+      "id": "i6",
+      "dok": 1,
+      "dimension": "internal-medicine",
+      "text": {
+        "ar": "يعجبني أن أتابع حالة واحدة أياماً حتى تتّضح الصورة.",
+        "en": "I like following one case over several days until the picture becomes clear."
+      }
+    },
+    {
+      "id": "i7",
+      "dok": 3,
+      "dimension": "internal-medicine",
+      "text": {
+        "ar": "أجمع ملاحظات صغيرة متفرّقة لأستنتج سبباً واحداً يجمعها.",
+        "en": "I collect small scattered observations to infer one cause behind them all."
+      }
+    },
+    {
+      "id": "i8",
+      "dok": 2,
+      "dimension": "internal-medicine",
+      "text": {
+        "ar": "يستهويني أن أسأل عن أدوية المريض قبل أن أقرّر شيئاً.",
+        "en": "I'm drawn to asking what medicines a patient takes before deciding anything."
+      }
+    },
+    {
+      "id": "i9",
+      "dok": 1,
+      "dimension": "surgery",
+      "text": {
+        "ar": "لا أتردّد في العمل بيديّ أكثر من الكتابة.",
+        "en": "I'd rather work with my hands than write."
+      }
+    },
+    {
+      "id": "i10",
+      "dok": 2,
+      "dimension": "surgery",
+      "text": {
+        "ar": "أرتاح لقرار حاسم يجب أن يُتّخذ في دقيقة، لا في أسبوع.",
+        "en": "I'm comfortable with a decisive call that has to be made in a minute, not a week."
+      }
+    },
+    {
+      "id": "i11",
+      "dok": 2,
+      "dimension": "surgery",
+      "text": {
+        "ar": "يهمني أن أعرف الخطوات بالترتيب الصحيح قبل أن أبدأ.",
+        "en": "I care about knowing the steps in the right order before I start."
+      }
+    },
+    {
+      "id": "i12",
+      "dok": 2,
+      "dimension": "diagnostics",
+      "text": {
+        "ar": "أحبّ أن أقرأ الصورة: ما الذي يظهر فيها وما الذي لا يظهر؟",
+        "en": "I enjoy reading an image: what it shows, and what it does not."
+      }
+    },
+    {
+      "id": "i13",
+      "dok": 3,
+      "dimension": "diagnostics",
+      "text": {
+        "ar": "أقارن نتيجتين متشابهتين وأسأل: أيّ الفرق بينهما يغيّر القرار؟",
+        "en": "I compare two similar results and ask which difference changes the decision."
+      }
+    },
+    {
+      "id": "i14",
+      "dok": 3,
+      "dimension": "diagnostics",
+      "text": {
+        "ar": "أشكّ في نتيجة تبدو واضحة أكثر من اللازم، وأطلب دليلاً آخر.",
+        "en": "I'm suspicious of a result that looks too obvious, and ask for more evidence."
+      }
+    }
+  ]
+}
